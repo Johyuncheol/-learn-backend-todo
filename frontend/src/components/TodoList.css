@@ -1,0 +1,49 @@
+/* TodoList.js에 대한 스타일 */
+
+/* 기본 스타일 */
+.todo-list-container {
+    padding: 20px;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+    background-color: #e0f7e0;
+}
+
+.todo-item .todo-title {
+    font-size: 18px;
+}
+
+.todo-item .todo-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-item button {
+    background-color: #f44336;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.todo-item button:hover {
+    background-color: #d32f2f;
+}
