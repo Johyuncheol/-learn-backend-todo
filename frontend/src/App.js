@@ -6,7 +6,8 @@ import LoginPage from "./pages/LoginPage";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import PrivateRoute from "./layout/privateRoute";
-
+import Upload from "./pages/Upload";
+import RecordingDetail from "./pages/record/[id]";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,9 @@ function App() {
         />
 
         <Route path="/signup" element={<Signup />} />
+        <Route path="/record/:id" element={<RecordingDetail />} />
+        <Route path="/upload" element={<Upload />} />
+
       </Routes>
     </div>
   );
